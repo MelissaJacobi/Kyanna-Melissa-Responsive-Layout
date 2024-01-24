@@ -17,6 +17,54 @@ html {
   line-height: 1.4;
 }
 
+div,
+main,
+section,
+footer,
+header {
+  min-height: 1rem;
+  border: 1px solid red;
+  padding: 0.5rem;
+}
+/*core layout*/
+
+.row {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.col {
+  position: relative;
+  background-color: rgb(242, 230, 177);
+}
+
+/*core styling*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+/*typography*/
+
+p { 
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+}
+
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -166,16 +214,16 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+/*
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition *//*
 }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  /* Style adjustments for high resolution devices *//*
 }
 
 /* ==========================================================================
@@ -184,13 +232,13 @@ textarea {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
+/*@media print {
   *,
   *::before,
   *::after {
     background: #fff !important;
     color: #000 !important;
-    /* Black prints faster */
+    /* Black prints faster *//*
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -207,11 +255,11 @@ textarea {
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
-
+  */
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
-   */
+   *//*
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -244,4 +292,4 @@ textarea {
     page-break-after: avoid;
   }
 }
-
+*/
